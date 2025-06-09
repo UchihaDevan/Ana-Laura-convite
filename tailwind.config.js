@@ -17,5 +17,31 @@ const config = {
 
   plugins: [],
 }
+module.exports = {
+  theme: {
+    extend: {
+      fontFamily: {
+        luckiest: ['Luckiest Guy', 'cursive'],
+      },
+      colors: {
+        'primary-light': '#FFFAE5',
+        'primary-main':  '#FFD54F',
+        'primary-dark':  '#BF360C',
+        'secondary-main':'#FF7043',
+        'accent-light':  '#E1F5FE',
+        'accent-dark':   '#01579B',
+      },
+      animation: {
+        'fade-in': 'fadeIn 0.7s ease-out',
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: 0, transform: 'translateY(10px)' },
+          '100%': { opacity: 1, transform: 'translateY(0)' },
+        },
+      },
+    },
+  },
+}
 
 module.exports = config
