@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@layer utilities {
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-12px) rotate(2deg);
+    }
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-float-slow {
+    animation: float 10s ease-in-out infinite;
+  }
+}
+
+@keyframes fly-away {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(80px, -80px) rotate(15deg);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(200px, -300px) rotate(30deg);
+    opacity: 0;
+  }
+}
+
+.animate-fly-away {
+  animation: fly-away 6s ease-in forwards;
+}
