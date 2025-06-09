@@ -9,7 +9,8 @@ import borboletaLocal from '../assets/borboleta-local.png';
 import borboletaTitulo from '../assets/borboleta-titulo.png';
 import casaPassaro from '../assets/casa-passaro.png';
 import galho from '../assets/galho.png';
-import { CalendarCheck, Gift, Hourglass, MapPinned, X } from 'lucide-react';
+import { CalendarCheck, Gift, Hourglass, MapPinned, X, Shirt, Footprints, Puzzle } from 'lucide-react';
+
 
 const Teste: React.FC = () => {
     const [modalOpen, setModalOpen] = useState(false);
@@ -35,9 +36,25 @@ const Teste: React.FC = () => {
             icon: <Gift className="size-8 sm:size-10" />,
             label: 'Presentes',
             content: (
-                <p>
-                    Sua presença é o melhor presente! Mas se desejar contribuir, temos uma lista no site da Loja Mágica Encantada 💖
-                </p>
+                <div className="space-y-4">
+                    <p className="text-lg text-gray-800">
+                        Sua presença é o melhor presente! Mas se desejar contribuir, aqui vão algumas sugestões com carinho:
+                    </p>
+                    <ul className="space-y-2 text-purple-900 font-medium">
+                        <li className="flex items-center gap-2">
+                            <Shirt className="w-9 h-9 text-[#863E3A]" />
+                            Roupas tamanho <span className="font-bold">3/4 anos</span>
+                        </li>
+                        <li className="flex items-center gap-2">
+                            <Footprints className="w-9 h-9 text-[#863E3A]" />
+                            Calçados tamanho <span className="font-bold">25/26</span>
+                        </li>
+                        <li className="flex items-center gap-2">
+                            <Puzzle className="w-9 h-9 text-[#863E3A]" />
+                            Brinquedos educativos
+                        </li>
+                    </ul>
+                </div>
             ),
         },
         {
