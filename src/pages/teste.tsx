@@ -13,7 +13,7 @@ import { CalendarCheck, Gift, Hourglass, MapPinned, X } from 'lucide-react';
 
 const Teste: React.FC = () => {
     const [modalOpen, setModalOpen] = useState(false);
-    const [modalContent, setModalContent] = useState<{ label: string; content: JSX.Element } | null>(null);
+    const [modalContent, setModalContent] = useState<{ label: string; content: React.ReactNode } | null>(null);
 
     const options = [
         {
@@ -69,7 +69,7 @@ const Teste: React.FC = () => {
     ];
 
 
-    const openModal = (item: { label: string; content: JSX.Element }) => {
+    const openModal = (item: { label: string; content: React.ReactNode }) => {
         setModalContent(item);
         setModalOpen(true);
     };
