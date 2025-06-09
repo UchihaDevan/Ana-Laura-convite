@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Countdown from '../components/Countdown';
-import { useNavigate } from 'react-router-dom';
 import anaLauraImg from '../assets/ana-laura.png';
 import footer from '../assets/gramado.png';
 import passaroTop from '../assets/borboleta-top.png';
@@ -13,7 +12,6 @@ import galho from '../assets/galho.png';
 import { CalendarCheck, Gift, Hourglass, MapPinned, X } from 'lucide-react';
 
 const Teste: React.FC = () => {
-    const navigate = useNavigate();
     const [modalOpen, setModalOpen] = useState(false);
     const [modalContent, setModalContent] = useState<{ label: string; content: JSX.Element } | null>(null);
 
