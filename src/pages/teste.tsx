@@ -104,7 +104,7 @@ const Teste: React.FC = () => {
   }
 
   return (
-    <div className="h-screen overflow-hidden flex flex-col items-center justify-between relative bg-[#b7dff2]">
+    <div className="h-screen overflow-hidden flex flex-col items-center justify-start relative bg-[#b7dff2]">
       {/* Decorações fixas */}
       <img
         src={passaroTop}
@@ -119,7 +119,7 @@ const Teste: React.FC = () => {
       <img
         src={casaPassaro}
         alt="Casa de pássaro"
-        className="absolute bottom-0 left-10 w-28 sm:w-20 z-10"
+        className="absolute -bottom-1 left-10 w-36 z-10"
       />
       <img
         src={borboletaTitulo}
@@ -138,8 +138,8 @@ const Teste: React.FC = () => {
       />
 
       {/* Conteúdo principal */}
-      <main className="relative z-10 text-center px-6 flex flex-col items-center">
-        <h1 className="mt-16 mb-4 text-3xl sm:text-4xl font-bold text-white drop-shadow-md">
+      <main className="relative z-10 text-center px-6 flex flex-col items-center mt-32">
+        <h1 className=" mb-4 text-3xl sm:text-4xl font-bold text-white drop-shadow-md">
           Bem-vindo à festa da Ana Laura!
         </h1>
         <p className="mb-6 max-w-md text-xl sm:text-2xl text-[#863E3A]">
@@ -178,7 +178,7 @@ const Teste: React.FC = () => {
       <img
         src={footer}
         alt="Grama decorativa"
-        className="w-full h-[80px] sm:h-[100px] z-10"
+        className="w-full h-[80px] sm:h-[100px] z-10 mt-32"
       />
 
       {/* Modal */}
