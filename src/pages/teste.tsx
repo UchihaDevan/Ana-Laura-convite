@@ -139,7 +139,7 @@ const Teste: React.FC = () => {
 
       {/* Conteúdo principal */}
       <main className="relative z-10 text-center px-6 flex flex-col items-center">
-        <h1 className="mt-32 mb-4 text-3xl sm:text-4xl font-bold text-white drop-shadow-md">
+        <h1 className="mt-16 mb-4 text-3xl sm:text-4xl font-bold text-white drop-shadow-md">
           Bem-vindo à festa da Ana Laura!
         </h1>
         <p className="mb-6 max-w-md text-xl sm:text-2xl text-[#863E3A]">
