@@ -82,6 +82,8 @@ const options = [
         label: 'Contagem',
         content: (
             <div className="text-center">
+                <h1 className='text-2xl text-purple-800'>Data: 19/07/2025</h1>
+                <h2 className='text-2xl text-purple-700'>Horário: 19 horas</h2>
                 <Countdown targetDate="2025-07-19T15:19:00" />
             </div>
         ),
