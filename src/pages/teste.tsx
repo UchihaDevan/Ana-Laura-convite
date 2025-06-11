@@ -37,7 +37,7 @@ const options = [
         ),
     },
     {
-        icon: <Gift className="w-8 h-8 sm:w-10 sm:h-10" />,
+        icon: <Gift className="w-8 h-8 mx-2 sm:w-10 sm:h-10" />,
         label: 'Presentes',
         content: (
             <div className="space-y-4">
@@ -118,7 +118,7 @@ const Teste: React.FC = () => {
             <img
                 src={galho}
                 alt="Galho"
-                className="absolute -top-14 right-0 w-12 sm:w-14 z-0"
+                className="absolute -top-16 right-0 w-[200px] z-0"
             />
             <img
                 src={borboleta2d}
@@ -197,7 +197,7 @@ const Teste: React.FC = () => {
 
             {/* Modal */}
             {modalOpen && modalContent && (
-                <div className="fixed inset-0 bg-white/30 backdrop-blur-sm flex items-center justify-center z-50">
+                <div className="fixed inset-0 bg-white/30 backdrop-blur-sm flex items-center px-5 justify-center z-50">
                     <div className="relative w-full max-w-md p-6 bg-white rounded-2xl shadow-2xl">
                         <button
                             onClick={closeModal}
