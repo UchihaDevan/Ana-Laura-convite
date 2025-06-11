@@ -143,7 +143,7 @@ const Teste: React.FC = () => {
             <img
                 src={borboletaLocal}
                 alt="Borboleta botão"
-                className="absolute top-20 right-6 w-12 sm:w-16 animate-float-slow z-10"
+                className="absolute top-60 right-6 w-12 sm:w-16 animate-float-slow z-10"
             />
             <img
                 src={arbusto}
@@ -153,12 +153,11 @@ const Teste: React.FC = () => {
 
             {/* Conteúdo principal */}
             <main className="relative z-10 text-center px-6 flex flex-col items-center mt-32">
-                <h1 className=" mb-4 text-3xl sm:text-4xl font-bold text-white drop-shadow-md">
-                    Bem-vindo à festa da Ana Laura!
+                <h1 className="title-top mb-4 text-4xl sm:text-4xl text-white drop-shadow-md">
+                    Aniversário da Ana Laura!
                 </h1>
-                <p className="mb-6 max-w-md text-xl sm:text-2xl text-[#863E3A]">
-                    Uma data mágica está chegando... Vamos comemorar os 3 aninhos dessa
-                    fadinha encantadora!
+                <p className="mb-6 max-w-md text-2xl text-[#863E3A]">
+                    A borboleta mais linda do nosso jardim está completando 3 aninhos, e você é o nosso convidado especial!
                 </p>
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 mb-6">
                     {options.map((item, idx) => (
